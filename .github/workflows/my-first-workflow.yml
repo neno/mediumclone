@@ -18,3 +18,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: Web Request Action
+        # You may pin to the exact commit or the version.
+        # uses: Satak/webrequest-action@5fafb47657920704ad01cfb820fd9aacd81d74cf
+        uses: Satak/webrequest-action@v1.2.3
+        with:
+          url: https://api.chucknorris.io/jokes/random
+          method: GET
+          
